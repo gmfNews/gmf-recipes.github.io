@@ -44,7 +44,7 @@
                      "http://linkedin.com/company/allrecipes.com"
                   ]
                },
-               "name": "Gabriel's Pork Chops",
+               "name": "Gabriel's Pork Chops - nutrition data has HTML tags",
                "aggregateRating": {
                   "@type": "AggregateRating",
                   "ratingValue": "4.2",
@@ -61,7 +61,7 @@
                   "<em>saturatedFatContent": "7 g </em>",
                   "<bogusTag/>sodiumContent": "2873 mg",
                   "sugarContent": "10 g",
-                  "fatContent": "39 g",
+                  "fatContent": "39 g from <em>organic</em> plant source",
                   "unsaturatedFatContent": "0 g"
                },
                "prepTime": "PT5M",
@@ -140,7 +140,7 @@
       </script>
    </head>
    <body>
-      <h1>Gabriel's Pork Chops - nutrition data - baseline</h1>
+      <h1>Gabriel's Pork Chops - nutrition data  - nutrition data has HTML tags</h1>
       <p>
          This recipe roughly matches what's in the ld + json <code>&lt;script/&gt;</code> element in the <code>&lt;head/&gt;</code> element.
       </p>
@@ -161,7 +161,7 @@
          <li>&lt;em&gt; saturatedFatContent: 7 g &lt;/em &gt; (&lt;em/&gt; at start property "name" and end of "value"; whole property)</li>
          <li>&lt;bogusTag/&gt; sodiumContent: 2873 mg (&lt;bogusTag/&gt; at start of property "name")</li>
          <li>sugarContent: 10 g</li> 
-         <li>fatContent: 39 g</li>
+         <li>fatContent: 39 g from &lt;em&gt;organic&lt;/em&gt; plant source (&lt;em/&gt; in property "value")</li>
          <li>unsaturatedFatContent: 0 g (<code>"nutrition"</code> property has <code>0</code> value with unit)</li>
       </ul>
       <h2>Ingredients</h2>
