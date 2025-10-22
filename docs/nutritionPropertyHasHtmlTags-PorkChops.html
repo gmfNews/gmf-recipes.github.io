@@ -54,13 +54,13 @@
                "nutrition": {
                   "@type": "NutritionInformation",
                   "calories": "484 kcal",
-                  "carbohydrateContent": "14 g",
+                  "carbohydrateContent": "<bogusTag/>14 g",
                   "cholesterolContent": "<b>48 mg</b>",
                   "fiberContent": "0 g",
                   "<i>proteinContent</i>": "21 g ",
                   "<em>saturatedFatContent": "7 g </em>",
                   "<bogusTag/>sodiumContent": "2873 mg",
-                  "sugarContent": "10 g",
+                  "sugarContent": "<i>10 g from <b>pure cane</b> sugar</i>",
                   "fatContent": "39 g from <em>organic</em> plant source",
                   "unsaturatedFatContent": "0 g"
                },
@@ -154,13 +154,13 @@
       <p>Nutrition Information</p>
       <ul>
          <li>calories: 484 kcal</li>
-         <li>carbohydrateContent: 14 g</li>
+         <li>carbohydrateContent: &lt;bogusTag/&gt;14 g  (&lt;bogusTag/&gt; at start of property "value")</li>
          <li>cholesterolContent: &lt;b&gt;48 mg&lt;/b&gt; (&lt;b/&gt; around property "value")</li>
          <li>fiberContent: 0 g (<code>"nutrition"</code> property has <code>0</code> value with unit)</li>
          <li>&lt;i&gt; proteinContent&lt;/i&gt; : 21 g (&lt;i/&gt; around property "name")</li>
          <li>&lt;em&gt; saturatedFatContent: 7 g &lt;/em &gt; (&lt;em/&gt; at start property "name" and end of "value"; whole property)</li>
          <li>&lt;bogusTag/&gt; sodiumContent: 2873 mg (&lt;bogusTag/&gt; at start of property "name")</li>
-         <li>sugarContent: 10 g</li> 
+         <li>sugarContent: &lt;i&gt;10 g from &lt;b&gt;pure cane&lt;/b&gt; sugar&lt;/i&gt; (&lt;i/&gt; at ends of property "value", and &lt;b/&gt; in substring in "value")</li> 
          <li>fatContent: 39 g from &lt;em&gt;organic&lt;/em&gt; plant source (&lt;em/&gt; in property "value")</li>
          <li>unsaturatedFatContent: 0 g (<code>"nutrition"</code> property has <code>0</code> value with unit)</li>
       </ul>
