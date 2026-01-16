@@ -1,1 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Ginger Cookie House - has edge and negative cases for multi-part ingredients</title>
+    <script id="allrecipes-schema_1-0" class="comp allrecipes-schema mntl-schema-unified" type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "@id": "https://www.tasteofhome.com/recipes/gingerbread-christmas-cottage/",
+        "name": "Ginger Cookie House",
+        "datePublished": "2018-01-01",
+        "dateModified": "2024-10-31",
+        "prepTime": "PT10H00M",
+        "cookTime": "PT10M",
+        "totalTime": "PT10H10M",
+        "image":
+        {
+            "@type": "ImageObject",
+            "url": "https://www.tasteofhome.com/wp-content/uploads/2024/10/EXPS_33274_CWXCov06ClonewLightsC_10_31_01.jpg",
+            "height": 1200,
+            "width": 1200
+        },
+        "recipeCategory":
+        [
+            "Desserts"
+        ],
+        "description": "Our Ginger Cookie house recipe is for novice and pro bakers alike. We’ll show you how to make, bake, build and decorate a Ginger Cookie house from scratch—with a free, printable Ginger Cookie house template to boot!",
+        "recipeIngredient":
+        [
+            {
+                "@type": "ItemList",
+                "name": "To make dough",
+                "itemListElement":
+                [
+                    "2 cups shortening",
+                    "2 cups sugar",
+                    "2 cups molasses",
+                    "4 large eggs",
+                    "10 cups all-purpose flour",
+                    "2 tablespoons ground ginger",
+                    "2 tablespoons ground cinnamon",
+                    "2 teaspoons salt",
+                    "2 teaspoons ground nutmeg",
+                    "2 teaspoons ground cloves"
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "To make icing/sect 5/dupe ingredient across itemLists",
+                "itemListElement":
+                [
+                    "1 package (2 pounds) confectioners' sugar",
+                    "6 tablespoons meringue powder",
+                    "12 to 14 tablespoons water",
+                    "5 tablespoons ground allspice"
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "To assemble church/sect 5/dupe ingredient across itemLists",
+                "itemListElement":
+                [
+                    "Cardboard cake board (at least 14-in. x 10-in.)",
+                    "5 tablespoons ground allspice"
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "For steeple/sect 2/missing unitCode",
+                "itemListElement":
+                [
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "6",
+                        "name": "Ground Cinnamon"
+                    }
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "To assemble roof/sect 3/non-numeric value",
+                "itemListElement":
+                [
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "five",
+                        "name": "Ground Ginger"
+                    }
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "For dormers/sect 4/fractional value",
+                "itemListElement":
+                [
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "1/8",
+                        "unitCode": "cup",
+                        "name": "Ground Cardamom"
+                    }
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "itemListElement":
+                [
+                    "Red paste food coloring (sect 6/no itemList name)"
+                ]
+            },
+            {
+                "@type": "invalidItemListType",
+                "name": "Sect 7/invalid type",
+                "itemListElement":
+                [
+                    "Green paste food coloring"
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "Sect 8/missing itemListElement"
+            },
+            {
+                "@type": "ItemList",
+                "name": "Sect 9/empty itemListElement",
+                "itemListElement": []
+            },
+            {
+                "@type": "ItemList",
+                "name": "For trees",
+                "itemListElement":
+                [
+                    "Green, purple and red paste food coloring, corn syrup, ice cream sugar cones, green sprinkles, cornflakes, Rolo candies and flaked coconut"
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "Borders and knobs - itemListElement has dupe position values",
+                "itemListElement":
+                [
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "1/2",
+                        "unitCode": "cup",
+                        "name": "Crushed Jolly Rancher hard candies (dupe position)"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "1",
+                        "unitCode": "cup",
+                        "name": "Black shoestring licorice (dupe position)"
+                    }
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "Liquids",
+                "itemListElement":
+                [
+                    {
+                        "@type": "InvalidPropertyValue",
+                        "position": 1,
+                        "value": "1.5",
+                        "unitCode": "teaspoon",
+                        "name": "water (invalid property value)"
+                    }
+                ]
+            },
+            "New paintbrush"
+        ],
+        "recipeInstructions":
+        [
+            {
+                "@type": "HowToSection",
+                "name": "To make dough",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "In a very large bowl, cream shortening and sugar until light and fluffy. Beat in molasses and eggs. Combine the flour, ginger, cinnamon, salt, nutmeg and cloves; gradually add to creamed mixture and mix well. Cover and chill for 2 hours or until easy to handle."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Trace patterns onto waxed paper; cut out. On a lightly floured surface, roll dough in batches to 1/4-in. thickness. Position patterns on dough and cut out. Using a sharp knife, score outlines to mark door where indicated on pattern, being careful not to cut all the way through dough."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Using a toothpick, draw lines into dough to form shingles on roof pieces. To form siding, press the edge of a ruler into remaining pieces except dormers and steeple. (Keep pieces covered to prevent them from drying out.)"
+            },
+            {
+                "@type": "HowToStep",
+                "text": "With a small knife and ruler, cut two 1/4-in.-wide strips for the cross. Cut two 1/4-in.-wide strips for the door handles. Working freehand, cut a 2-1/2-in.-wide pathway. Roll small amounts of dough into balls; press onto pathway, forming stones."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Transfer all pieces to parchment-lined baking sheets. Bake at 350u00b0 for 12-15 minutes or until browned. Cut out doors completely. Cool Ginger Cookie on pans for 2 minutes before carefully removing to wire racks to cool completely."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Return the front and side pieces of church to parchment-lined baking sheets. Spoon crushed candies into window cutouts. Bake at 400u00b0 for 3-4 minutes or until candy is melted. Working quickly, carefully press licorice pieces into windows, creating a leaded glass effect. Cool completely on baking sheets."
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Tint water with desired amount of red food coloring. Using paintbrush, paint mixture over the roof, steeple and dormer pieces; blot gently with paper towels and let dry."
+            },
+            {
+                "@type": "HowToSection",
+                "name": "To make icing",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "In a very large bowl, combine confectioners' sugar and meringue powder. Add water; beat on low speed just until combined. Beat on high for 4-5 minutes or until stiff peaks form. Transfer 2 cups icing to another bowl; beat in cinnamon until blended. Keep icing covered at all times with a damp cloth."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToSection",
+                "name": "To assemble church",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Pipe cinnamon icing along base and one side of front of church and the adjoining side wall. Place walls at right angles to each other on cake board; prop with small cans. Pipe icing along inside and outside edges for added stability. Repeat with second side wall and back of church. Let dry completely."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToSection",
+                "name": "For steeple",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Pipe cinnamon icing along one side of front of steeple base and one adjoining side wall. Position at right angles to each other and place on waxed paper; pipe icing along inside edge for added stability. Hold in place until set. Repeat with remaining side and back of steeple base. Repeat for steeple. Let dry completely."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Pipe cinnamon icing along top edges of steeple base; attach steeple. Let dry completely."
+            },
+            {
+                "@type": "HowToSection",
+                "name": "To assemble roof",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Pipe cinnamon icing along top edges of church walls. Position roof pieces so there is equal overhang in front and back. Pipe icing along the joining edges. Prop bottoms of roof pieces with cans until roof is completely dry. Pipe icing onto edges of steeple and attach to roof. Join the cross pieces with icing; attach to edges of roof."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToSection",
+                "name": "For dormers",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "On a work surface, position dormer pieces at angles to each other, forming seven dormers. Pipe cinnamon icing along the joining edges. Let dry completely. Pipe icing onto the edges of dormers and attach over windows. Hold in place until secure, about 1 minute."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToSection",
+                "name": "Finishing touches",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "Tint a small amount of icing green and a small amount red. Using a #14 star tip and green icing, pipe wreaths on the doors. Using a #2 round tip and red icing, pipe berries on wreaths. With cinnamon icing, attach handles to doors; attach doors to church front."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToSection",
+                "name": "For trees",
+                "itemListElement":
+                [
+                    {
+                        "@type": "HowToStep",
+                        "text": "heat a small amount of corn syrup in the microwave until thin; brush over sugar cones. Coat with sprinkles. For shrubs, thin a small amount of icing with water and tint green. Pour over cornflakes; toss to coat. Spread onto waxed paper. Let stand until set. Attach cornflakes to Rolo candies with icing."
+                    }
+                ]
+            },
+            {
+                "@type": "HowToStep",
+                "text": "Cover cake board with white icing. Immediately press pathway into icing. Arrange trees and shrubs as desired. Place coconut in a food processor; cover and process until finely chopped. Sprinkle over the church, trees and ground."
+            }
+        ],
+        "recipeYield": "1 Ginger Cookie house",
+        "author":
+        [
+            {
+                "@type": "Person",
+                "name": "Val Goodrich"
+            }
+        ],
+        "nutrition":
+        {
+            "@type": "NutritionInformation",
+            "calories": "",
+            "fatContent": "",
+            "cholesterolContent": "",
+            "sodiumContent": "",
+            "carbohydrateContent": "",
+            "fiberContent": "",
+            "proteinContent": ""
+        },
+        "aggregateRating":
+        {
+            "@context": "http://schema.org/",
+            "@type": "AggregateRating",
+            "ratingValue": 4,
+            "reviewCount": 5,
+            "worstRating": 1,
+            "bestRating": 5
+        },
+        "review":
+        [
+            {
+                "@context": "http://schema.org/",
+                "@type": "Review",
+                "datePublished": "2024-12-10",
+                "author":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Person",
+                    "name": "Rick861"
+                },
+                "reviewBody": "<p>Select link for Ginger Cookie Barn, got a house instead. Would love to do the barn.</p>",
+                "reviewRating":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Rating",
+                    "ratingValue": 2,
+                    "worstRating": 1,
+                    "bestRating": 5
+                }
+            },
+            {
+                "@context": "http://schema.org/",
+                "@type": "Review",
+                "datePublished": "2012-12-15",
+                "author":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Person",
+                    "name": "bella3028"
+                },
+                "reviewBody": "loves",
+                "reviewRating":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Rating",
+                    "ratingValue": 5,
+                    "worstRating": 1,
+                    "bestRating": 5
+                }
+            },
+            {
+                "@context": "http://schema.org/",
+                "@type": "Review",
+                "datePublished": "2013-11-23",
+                "author":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Person",
+                    "name": "swhittley"
+                },
+                "reviewBody": "You have to download the patterns and print them off.  I paste my pattern pieces on to poster board and then cut out.  I use a large and small pizza cutter to cut out the GB pieces.   I also roll my GB out on lightly floured parchment, cut out the pieces and pull away the excess to use again.  Brush away any excess flour and bake.  Slide off on to a really sturdy rack.  Also, a foam core board is not strong enough to hold a fully decorated house of this size.  I use  22\" x 22\" hard density fiberboard.  When Christmas is over, I throw away the house and save the board for next year.  Decorate each section before you start to put it together.",
+                "reviewRating":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Rating",
+                    "ratingValue": 4,
+                    "worstRating": 1,
+                    "bestRating": 5
+                }
+            },
+            {
+                "@context": "http://schema.org/",
+                "@type": "Review",
+                "datePublished": "2013-12-01",
+                "author":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Person",
+                    "name": "Ngungy"
+                },
+                "reviewBody": "Can't you make the plans yourselves?  They are only measured squares, one with a gable!!",
+                "reviewRating":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Rating",
+                    "ratingValue": 4,
+                    "worstRating": 1,
+                    "bestRating": 5
+                }
+            },
+            {
+                "@context": "http://schema.org/",
+                "@type": "Review",
+                "datePublished": "2015-12-10",
+                "author":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Person",
+                    "name": "slmarcial"
+                },
+                "reviewBody": "On line item \"2.\" it states: \"Trace the full patterns\",  if you look closely you can see that the word \"patterns\" is a slightly different color, that is because the word \"patterns\" is your hyper-link to the patter...meaning click on it & you can then see it opens another tab with the patter.    :)  Hope that helps!",
+                "reviewRating":
+                {
+                    "@context": "http://schema.org/",
+                    "@type": "Rating",
+                    "ratingValue": 5,
+                    "worstRating": 1,
+                    "bestRating": 5
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+
+    <h1>Ginger Cookie House</h1>
+    <p>These ingredients do not match what's in the ld + json script element.</p>
+    <p>Our Ginger Cookie house recipe is for novice and pro bakers alike. We'll show you how to make, bake, build and decorate a Ginger Cookie house from scratchâ€”with a free, printable Ginger Cookie house template to boot!</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+        <li>These ingredients do not match what's in the ld + json script element.</li>
+        <li>To make dough</li>
+        <ul>
+            <li>2 cups shortening</li>
+            <li>1 teaspoon freshly squeezed lime juice</li>
+        </ul>
+        <li>SWEETENERS</li>
+        <ul>
+            <li>1 tablespoon agave syrup or simple syrup</li>
+        </ul>
+        <li>1 wedge plus 1 slice lemon or lime, divided, for garnish</li>
+        <li>1 tablespoon chili lime seasoning, such as Tajin</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+        <li>Add vodka, blueberry lemonade, agave syrup, and lime juice to a cocktail shaker.</li>
+        <li>Fill the cocktail shaker with ice and shake until the outside is frosted, about 30 seconds.</li>
+        <li>Sprinkle Tajin seasoning on a plate, rub the rim of your favorite glass with a lemon or lime wedge, and dip
+            the glass in seasoning to coat the rim. Strain the cocktail into the glass.</li>
+    </ol>
+
+    <p><strong>Note:</strong>Be sure to buy a good-quality feta for this recipe, particularly because it’s the main
+        ingredient and flavor of the dish.</p>
+
+</body>
+
+</html>
