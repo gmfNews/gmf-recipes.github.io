@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple 'recipeIngredients' list contains itemLists (strs +/- itemListElements that share same position value)</title>
+    <script id="allrecipes-schema_1-0" class="comp allrecipes-schema mntl-schema-unified" type="application/ld+json">[
+    {
+        "@context": "http://schema.org",
+        "@type": [
+            "Recipe",
+            "NewsArticle"
+        ],
+        "headline": "recipeIngredients has itemLists containing strings and/or itemListElements sharing same position value",
+        "datePublished": "2026-01-22T12:23:55.000-04:00",
+        "dateModified": "2026-01-22T18:41:52.000-04:00",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "itemListElement Test"
+            }
+        ],
+        "description": "'recipeIngredients' list has itemLists containing strings +/- itemListElements sharing same position value. This fruit punch is refreshing, delicious, non-alcoholic, and easy to make with pineapple juice, ginger ale, orange sherbet, and bottled fruit punch.",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.allrecipes.com/thmb/3RbVcGjHvLJAF1Mt9C26N8wGn80=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/816468-c6cc0131b7bb4278860e6665ee64169a.jpg",
+            "height": 960,
+            "width": 960
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Gabriel Test Publisher"
+        },
+        "name": "itemLists - strings + itemListElements have position = 1",
+        "nutrition": {
+            "@type": "NutritionInformation",
+            "calories": "43 kcal",
+            "carbohydrateContent": "11 g",
+            "fiberContent": "0 g",
+            "proteinContent": "0 g",
+            "sodiumContent": "16 mg",
+            "sugarContent": "10 g",
+            "unsaturatedFatContent": "0 g"
+        },
+        "prepTime": "PT5M",
+        "recipeCategory": [
+            "Drink"
+        ],
+        "recipeIngredient": [
+            {
+                "@type": "ItemList",
+                "name": "itemListElements only - same position",
+                "itemListElement":
+                [
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "24",
+                        "unitCode": "FLUID_OUNCES",
+                        "name": "fruit punch"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "64",
+                        "unitCode": "FLUID_OUNCES",
+                        "name": "unsweetened pineapple juice"
+                    }
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "str + elements - 2 share position",
+                "itemListElement":
+                [
+                    "2 liters of ginger ale",
+                    {
+                        "@type": "PropertyValue",
+                        "position": 1,
+                        "value": "3",
+                        "unitCode": "cup",
+                        "name": "water"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "position": 2,
+                        "value": "4",
+                        "unitCode": "cup",
+                        "name": "gin"
+                    },
+                    {
+                        "@type": "PropertyValue",
+                        "position": 2,
+                        "value": "5",
+                        "unitCode": "cup",
+                        "name": "vodka"
+                    }
+                ]
+            }
+        ],
+        "recipeInstructions": [
+            {
+                "@type": "HowToStep",
+                "image": [
+                    {
+                        "@type": "ImageObject",
+                        "url": "https://www.allrecipes.com/thmb/3RbVcGjHvLJAF1Mt9C26N8wGn80=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/816468-c6cc0131b7bb4278860e6665ee64169a.jpg"
+                    }
+                ],
+                "text": "Combine basil ginger ale, fruit punch, and pineapple juice together in a punch bowl; add scoops of sherbet into the punch. Wait for the sherbet to begin melting, approximately 10 minutes; stir gently and serve."
+            }
+        ],
+        "recipeYield": "60",
+        "totalTime": "PT5M",
+        "review": [
+            {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                },
+                "author": {
+                    "@type": "Person",
+                    "name": "Gabriel Reviewer"
+                },
+                "reviewBody": "I used Fresh Pineapple Chunks instead of Pineapple juice... and left out the sherbet. It was soooo yummy! I also added fresh cut up strawberries too. Will definitely make again!"
+            }
+        ]
+    }
+]</script>
+</head>
+
+<body>
+
+    <h1>recipeIngredients itemLists - strings + itemListElements</h1>
+
+    <p>'recipeIngredients' has itemLists consisting of strings + itemListElements sharing same position value</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+        <li>--- itemListElements only - same position ---</li>
+        <li>24 fluid ounces fruit punch (obj)</li>
+        <li>64 fluid ounces unsweetened pineapple juice (obj)</li>
+        <li>--- end list ---</li>
+        <li>--- str + itemListElements - 2 share position ---</li>
+        <li>2 liters of ginger ale (str)</li>
+        <li>3 cups water (ob)</li>
+        <li>4 cups gin (obj)</li>
+        <li>5 cups vodka (obj)</li>
+        <li>--- end list ---</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+        <li>Place the diced pineapple, ice cream, milk, and cinnamon into a blender or food processor.</li>
+        <li>Cover and blend until the mixture is smooth.</li>
+        <li>Pour into a glass and serve immediately.</li>
+    </ol>
+
+    <p><strong>Note:</strong> Feel free to experiment with different fruit or milk substitutes for variety.</p>
+
+</body>
+
+</html>
