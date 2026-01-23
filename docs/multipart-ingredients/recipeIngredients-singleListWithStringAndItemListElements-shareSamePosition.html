@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Simple 'recipeIngredients' list contains string + itemListElements that share same position value</title>
+    <title>'recipeIngredients' 1 itemList contains string + itemListElements that share same position value</title>
     <script id="allrecipes-schema_1-0" class="comp allrecipes-schema mntl-schema-unified" type="application/ld+json">[
     {
         "@context": "http://schema.org",
@@ -11,7 +11,7 @@
             "Recipe",
             "NewsArticle"
         ],
-        "headline": "Single recipeIngredients itemList containing string + itemListElements sharing same position value",
+        "headline": "recipeIngredients 1 itemList containing string + itemListElements sharing same position value",
         "datePublished": "2026-01-22T12:23:55.000-04:00",
         "dateModified": "2026-01-22T18:41:52.000-04:00",
         "author": [
@@ -20,7 +20,7 @@
                 "name": "itemListElement Test"
             }
         ],
-        "description": "'recipeIngredients' has simple list of ingredients consisting of string + itemListElements sharing same position value. This fruit punch is refreshing, delicious, non-alcoholic, and easy to make with pineapple juice, ginger ale, orange sherbet, and bottled fruit punch.",
+        "description": "'recipeIngredients' has one sub-list of ingredients consisting of string + itemListElements sharing same position value. This fruit punch is refreshing, delicious, non-alcoholic, and easy to make with pineapple juice, ginger ale, orange sherbet, and bottled fruit punch.",
         "image": {
             "@type": "ImageObject",
             "url": "https://www.allrecipes.com/thmb/3RbVcGjHvLJAF1Mt9C26N8wGn80=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/816468-c6cc0131b7bb4278860e6665ee64169a.jpg",
@@ -49,7 +49,7 @@
         "recipeIngredient": [
             {
                 "@type": "ItemList",
-                "name": "1 itemList of str + itemListElements",
+                "name": "1 itemList - str + itemListElements",
                 "itemListElement":
                 [
                     "2 liters of ginger ale",
@@ -111,16 +111,18 @@
 
 <body>
 
-    <h1>Single recipeIngredients itemList - itemListElements</h1>
+    <h1>Single recipeIngredients itemList - string + itemListElements</h1>
 
-    <p>'recipeIngredients' has simple list of ingredients consisting of itemListElements sharing same position value of "1".</p>
+    <p>'recipeIngredients' has 1 sub-list of ingredients consisting of string + itemListElements sharing same position value of "1".</p>
 
     <h2>Ingredients</h2>
     <ul>
-        <li>2 liters ginger ale</li>
-        <li>24 fluid ounces fruit punch</li>
-        <li>64 fluid ounces unsweetened pineapple juice</li>
-        <li>3 liters orange sherbert</li>
+        <li>--- 1 itemList of str + itemListElements ---</li>
+        <li>2 liters of ginger ale (str)</li>
+        <li>24 fluid ounces fruit punch (obj)</li>
+        <li>64 fluid ounces unsweetened pineapple juice (obj)</li>
+        <li>3 liters orange sherbert (obj)</li>
+        <li>--- end list ---</li>
     </ul>
 
     <h2>Instructions</h2>
