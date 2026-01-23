@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Simple 'recipeIngredients' list contains strings only</title>
+    <title>Simple 'recipeIngredients' itemList contains strings only</title>
     <script id="allrecipes-schema_1-0" class="comp allrecipes-schema mntl-schema-unified" type="application/ld+json">[
     {
         "@context": "http://schema.org",
@@ -20,7 +20,7 @@
                 "name": "itemListElement Test"
             }
         ],
-        "description": "'recipeIngredients' has simple list of ingredients consisting of strings only. This fruit punch is refreshing, delicious, non-alcoholic, and easy to make with pineapple juice, ginger ale, orange sherbet, and bottled fruit punch.",
+        "description": "'recipeIngredients' has simple sub-list of ingredients consisting of strings only. This fruit punch is refreshing, delicious, non-alcoholic, and easy to make with pineapple juice, ginger ale, orange sherbet, and bottled fruit punch.",
         "image": {
             "@type": "ImageObject",
             "url": "https://www.allrecipes.com/thmb/3RbVcGjHvLJAF1Mt9C26N8wGn80=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/816468-c6cc0131b7bb4278860e6665ee64169a.jpg",
@@ -95,14 +95,16 @@
 
     <h1>Single recipeIngredients itemList - strings only</h1>
 
-    <p>'recipeIngredients' has simple list of ingredients consisting of strings only.</p>
+    <p>'recipeIngredients' has simple sub-list of ingredients consisting of strings only.</p>
 
     <h2>Ingredients</h2>
     <ul>
+        <li>--- 1 itemList of strings only ---</li>
         <li>2.5 liters ginger ale</li>
         <li>3 fluid ounces fruit punch</li>
         <li>4 fluid ounces unsweetened pineapple juice</li>
         <li>1/2 gallons orange sherbet</li>
+        <li>--- end list ---</li>
     </ul>
 
     <h2>Instructions</h2>
